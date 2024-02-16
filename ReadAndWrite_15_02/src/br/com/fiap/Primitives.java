@@ -6,9 +6,9 @@ public class Primitives {
 
         byte age = 19; // Can be use to stock ages, little numbers (-127 to 127)
 
-        short code = 32000; // ask to the teacher, why.
+        short code = 32000; 
 
-        float average = 4.5f; // ask also.
+        float average = 4.5f; 
 
         int students = 100, classes = 4;
 
