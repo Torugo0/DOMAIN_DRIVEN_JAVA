@@ -1,4 +1,4 @@
-package br.com.fiap.EXs;
+package br.com.fiap.ReadAndWrite_Ex_16_02;
 
 import java.util.Scanner;
 
