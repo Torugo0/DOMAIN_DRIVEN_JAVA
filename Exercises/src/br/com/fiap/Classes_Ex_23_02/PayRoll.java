@@ -8,7 +8,7 @@ public class PayRoll {
         finalSalary.discountInss = 10;
         finalSalary.PlanHealthValue = 50;
         finalSalary.dependentsNumber = 2;
-
-        finalSalary.calculateSalary();
+        
+        System.out.println("Your salary with discounts is: "+ finalSalary.calculateSalary());
     }
 }

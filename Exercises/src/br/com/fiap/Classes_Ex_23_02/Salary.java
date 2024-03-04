@@ -6,13 +6,13 @@ public class Salary {
   public double discountInss;
   public double PlanHealthValue;
 
-  public double discount;
-  public double netSalary;
 
-  public void calculateSalary(){
+  public double calculateSalary(){
+    double discount;
+    double netSalary;
     discount = (grossSalary * (discountInss/100)) + ((dependentsNumber + 1)* PlanHealthValue);
     netSalary = grossSalary - discount;
-
-    System.out.println("Your salary with discounts is: "+ netSalary);
+    
+    return netSalary;
   }
 }
