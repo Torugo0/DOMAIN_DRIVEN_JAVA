@@ -1,5 +1,7 @@
 package br.com.fiap;
 
+import javax.swing.JOptionPane;
+
 public class EncapsulationTv {
     private int volume;
     private int channel;
@@ -9,10 +11,10 @@ public class EncapsulationTv {
     }
     public void setVolume(int volume) {
         try {
-            if (volume >= 0 && volume <= 20){
+            if (volume >= 0 && volume <= 100){
                 this.volume = volume;
             }else{
-                throw new Exception("Volume outside the permitted range (0 a 100)");
+                JOptionPane.showMessageDialog(null, "Volume outside the permitted range (0 a 100)");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -27,7 +29,7 @@ public class EncapsulationTv {
             if (channel == 2 || channel == 4 || channel == 5 || channel == 7 || channel == 13){
                 this.channel = channel;
             }else{
-                throw new Exception("The channel isn't permitted (2, 4, 5, 7, 13)");
+                JOptionPane.showMessageDialog(null, "The channel isn't permitted (2, 4, 5, 7, 13)");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
