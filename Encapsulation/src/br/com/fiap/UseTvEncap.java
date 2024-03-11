@@ -31,16 +31,5 @@ public class UseTvEncap {
             JOptionPane.showMessageDialog(null, "Wrong Format !!");
         }
 
-        
-
-        /* 
-        tv.setChannel(3);
-        tv.setVolume(10);
-        tv.show();
-
-        tv.setChannel(2);
-        tv.show();
-        */
-
     }
 }
