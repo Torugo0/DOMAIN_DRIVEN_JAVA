@@ -42,7 +42,7 @@ public class PeopleC {
                 throw new Exception("Valor errado ! (1900 - 2024)");
             }
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println(e.getMessage());
         }
     }
 

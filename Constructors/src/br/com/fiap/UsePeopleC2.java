@@ -14,6 +14,7 @@ public class UsePeopleC2 {
             System.out.println("Digite seu nome e ano de nascimento: ");
             peopleC3 = new PeopleC(scan.nextLine(), scan.nextInt());
             int age = peopleC3.ageCalculate(2024);
+            
 
             System.out.println("Name: " + peopleC3.getName());
             System.out.println("Age: " + age);
