@@ -8,7 +8,7 @@ public class UseVoter1 {
         Voter voter1 = new Voter();
 
         voter1.setName("Vitor Hugo");
-        voter1.setYearBirth(2005);
+        voter1.setYearBirth(2010);
         voter1.setTitleNumber(123456);
         voter1.setZone(123);
         voter1.setSection(456);

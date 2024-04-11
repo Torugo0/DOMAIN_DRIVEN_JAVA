@@ -10,6 +10,7 @@ public class DateManipulation {
     public static void main(String[] args) {
         LocalDate actualDate = LocalDate.now();
         LocalDate endOfTimes = LocalDate.parse("2012-12-21");
+        //LocalDate endOfTimes = LocalDate.parse(JOptionPane.showInputDialog("Digite a data do fim (yyyy-MM-dd):"));
 
         // Obtendo periodo de tempo entre as duas datas
         Period periodo = Period.between(endOfTimes, actualDate);
