@@ -1,7 +1,7 @@
 package br.com.fiap.main;
 
 import javax.swing.JOptionPane;
-import br.com.fiap.bean.*;
+import br.com.fiap.bean.Geometria;
 
 public class UsaGeometria {
     public static void main(String[] args) {
