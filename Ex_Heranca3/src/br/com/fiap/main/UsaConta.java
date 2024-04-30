@@ -11,7 +11,7 @@ import br.com.fiap.bean.Gerente;
 
 public class UsaConta {
     public static void main(String[] args) {
-        String nome;
+        String nome, formatoUSA;
         LocalDate dataNascimento;
         float valorHora, gorjeta, bonus;        
         int opcao;
@@ -25,7 +25,11 @@ public class UsaConta {
                 switch (opcao) {
                     case 1:
                         nome = JOptionPane.showInputDialog("Nome do funcionario: ");
-                        dataNascimento = LocalDate.parse(JOptionPane.showInputDialog("Digite a data de nascimento:"));
+                        aux = JOptionPane.showInputDialog("Digite sua data de nascimento");
+                        formatoUSA = aux.substring(6, 10); // 2024
+                        formatoUSA += "-" + aux.substring(3, 5); // 2024-11
+                        formatoUSA += "-" + aux.substring(0, 2); // 2024-11-04
+                        dataNascimento = LocalDate.parse(formatoUSA);
                         valorHora = Float.parseFloat(JOptionPane.showInputDialog("Qual o valor da hora de trabalho: "));
                         Funcionario func = new Funcionario(nome, dataNascimento, valorHora);
 
@@ -36,7 +40,11 @@ public class UsaConta {
                         break;
                     case 2:
                         nome = JOptionPane.showInputDialog("Nome do garçom: ");
-                        dataNascimento = LocalDate.parse(JOptionPane.showInputDialog("Digite a data de nascimento:"));
+                        aux = JOptionPane.showInputDialog("Digite sua data de nascimento");
+                        formatoUSA = aux.substring(6, 10); // 2024
+                        formatoUSA += "-" + aux.substring(3, 5); // 2024-11
+                        formatoUSA += "-" + aux.substring(0, 2); // 2024-11-04
+                        dataNascimento = LocalDate.parse(formatoUSA);
                         valorHora = Float.parseFloat(JOptionPane.showInputDialog("Qual o valor da hora de trabalho: "));
                         gorjeta = Float.parseFloat(JOptionPane.showInputDialog("Qual o valor da gorjeta recebida: "));
                         
@@ -49,7 +57,11 @@ public class UsaConta {
                         break;
                     case 3:
                         nome = JOptionPane.showInputDialog("Nome do gerente: ");
-                        dataNascimento = LocalDate.parse(JOptionPane.showInputDialog("Digite a data de nascimento:"));
+                        aux = JOptionPane.showInputDialog("Digite sua data de nascimento");
+                        formatoUSA = aux.substring(6, 10); // 2024
+                        formatoUSA += "-" + aux.substring(3, 5); // 2024-11
+                        formatoUSA += "-" + aux.substring(0, 2); // 2024-11-04
+                        dataNascimento = LocalDate.parse(formatoUSA);
                         valorHora = Float.parseFloat(JOptionPane.showInputDialog("Qual o valor da hora de trabalho: "));
                         bonus = Float.parseFloat(JOptionPane.showInputDialog("Qual o valor do bonus: "));
                         
