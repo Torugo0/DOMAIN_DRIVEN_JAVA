@@ -11,9 +11,9 @@ public class TesteCreate {
         Connection con = ConnectionFactory.abrirConexao();
 
         Carro carro = new Carro();
-        carro.setPlaca("JKK102");
-        carro.setCor("Branco");
-        carro.setDescricao("Nissan Versa");
+        carro.setPlaca("ABC9832");
+        carro.setCor("Amarelo");
+        carro.setDescricao("Camaro");
 
         CarroDAO carroDAO = new CarroDAO(con);
         System.out.println(carroDAO.inserir(carro));
