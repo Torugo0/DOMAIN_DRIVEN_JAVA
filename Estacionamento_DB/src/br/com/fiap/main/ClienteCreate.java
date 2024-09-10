@@ -11,9 +11,9 @@ public class ClienteCreate {
         Connection con = ConnectionFactory.abrirConexao();
 
         Cliente cliente = new Cliente();
-        cliente.setIdCliente(12);
-        cliente.setNomeCliente("Vitor");
-        cliente.setPlaca("FZO8712");
+        cliente.setIdCliente(2);
+        cliente.setNomeCliente("Ana Clara");
+        cliente.setPlaca("JKK100");
 
         ClienteDAO clienteDAO = new ClienteDAO(con);
         System.out.println(clienteDAO.inserir(cliente));
