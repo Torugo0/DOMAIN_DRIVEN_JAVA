@@ -11,7 +11,7 @@ public class ClienteExcluir {
         Connection con = ConnectionFactory.abrirConexao();
 
         Cliente cliente = new Cliente();
-        cliente.setIdCliente(2);
+        cliente.setIdCliente(1);
         ClienteDAO clienteDAO = new ClienteDAO(con);
         System.out.println(clienteDAO.excluir(cliente));
         ConnectionFactory.fecharConexao(con);

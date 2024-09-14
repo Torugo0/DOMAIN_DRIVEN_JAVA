@@ -10,7 +10,7 @@ public class TesteExcluir {
     public static void main(String[] args) {
         Connection con = ConnectionFactory.abrirConexao();
         Carro carro = new Carro();
-        carro.setPlaca("JKK102");
+        carro.setPlaca("JKK100");
         CarroDAO carroDAO = new CarroDAO(con);
         System.out.println(carroDAO.excluir(carro));
         ConnectionFactory.fecharConexao(con);
